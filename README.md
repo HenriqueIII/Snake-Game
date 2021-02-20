@@ -1,2 +1,2 @@
 # Snake-Game
-A basic snake game using my librarie
+A basic snake game using my library
