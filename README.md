@@ -10,10 +10,10 @@ The goal of this game is to eat as many **@** as you can in order to get more po
 
 ## Rules
 
-1. The **####O** moves at a constant speed, in the direction of the last key pressed.
-1. The border of the arena is made of obstacles.
-1. As you eat a **@**, another one spawns in some random place within the limits of the arena.
-1. The game ends if you collide with an obstacle or with the snake itself.
+* The **####O** moves at a constant speed, in the direction of the last key pressed.
+* The border of the arena is made of obstacles.
+* As you eat a **@**, another one spawns in some random place within the limits of the arena.
+* The game ends if you collide with an obstacle or with the snake itself.
 
 ## Movements
 You play using the following controls:
