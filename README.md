@@ -1,5 +1,5 @@
 # Snake Game
-A simple snakes gam emade with game library created in the chapter 6 of *Programação em C++ - Conceitos Básicos e Algoritmos* by *Pimenta Rodrigues, Pedro Pereira e Manuela Sousa*.
+A simple snakes game made with game library created in the chapter 6 of *Programação em C++ - Conceitos Básicos e Algoritmos* by *Pimenta Rodrigues, Pedro Pereira e Manuela Sousa*.
 
 ## Intro
 This game consists in the emulation in screen, text mode(TUI), of the movement of a snake **####O** within a arena, mouses **@** that appear in random places and obstacles that difficult the snake movement and are fatal if it colides with them.
