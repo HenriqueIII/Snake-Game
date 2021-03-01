@@ -25,12 +25,12 @@ endif
 all: $(TOBUILD)
 
 win32: $(OBJ)
-	$(CXX) $(CXX_FLAGS) $(SRC)/$(EXECUTABLE).cpp $(SRCOBJ) -o$(BIN)/$(EXECUTABLE).exe -L lib -I include -I include/curses lib/libUtil.a -lstdc++
+	$(CXX) $(CXX_FLAGS) $(SRC)/$(EXECUTABLE).cpp $(OBJ) -o$(BIN)/$(EXECUTABLE).exe -L lib -I include -I include/curses lib/libUtil.a -lstdc++
 	copy $(LIBRARIES)\libUtil.dll bin
 	copy pdcurses.dll bin
 
 linux: $(OBJ)
-	$(CXX) $(CXX_FLAGS) $(SRC)/$(EXECUTABLE).cpp $(SRCOBJ) -I$(INCLUDE) -L$(LIBRARIES) -Wl,-rpath='$$ORIGIN' -o $(BIN)/$(EXECUTABLE) -lUtil -lncurses
+	$(CXX) $(CXX_FLAGS) $(SRC)/$(EXECUTABLE).cpp $(OBJ) -I$(INCLUDE) -L$(LIBRARIES) -Wl,-rpath='$$ORIGIN' -o $(BIN)/$(EXECUTABLE) -lUtil -lncurses
 	cp $(LIBRARIES)/libUtil.so $(BIN)
 
 $(OBJ): $(ODIR)/%.o: $(SRC)/%.cpp
