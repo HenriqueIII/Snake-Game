@@ -25,11 +25,15 @@ Right arrow -> moves right
 ESC key     -> Quit
 ```
 ## Dependencies for compiling
+Linux - Ubuntu
 ```
 sudo apt install g++
 sudo apt install libncurses5-dev libncursesw5-dev
 ```
+For windows users you just need MinGW32
+
 ## Compiling
+
 ```
 git clone https://github.com/HenriqueIII/Snake-Game.git
 cd Snake-Game

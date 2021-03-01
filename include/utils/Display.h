@@ -5,6 +5,12 @@
 class Display{
     int foreground, background;
     WINDOW * my_win;
+    // Iniciar os pares das cores.
+    void initColor();
+    // Converte numeros para cores do curses
+    short curs_color(int fg);
+    // Converte num número previsivel de par de cor
+    int colornum(int fg, int bg);
 public:
     enum {
         // Cores escuras
@@ -13,14 +19,8 @@ public:
         BBLACK=8,BRED,BGREEN,BYELLOW,BBLUE,BMAGENTA,BCYAN,BWHITE
     };
     enum {MIN_X=0,MIN_Y=0,MAX_X=79,MAX_Y=23};
-    // Programar a carta de video em modo texto 80x25, 8 cores e ocultar o cursor.
+    // Programar a carta de video em modo texto 80x24, 8 cores e ocultar o cursor.
     Display();
-    // Iniciar os pares das cores.
-    void initColor();
-    // Converte numeros para cores do curses
-    short curs_color(int fg);
-    // Converte num número previsivel de par de cor
-    int colornum(int fg, int bg);
     // Alterar a cor dos caracteres a escrever, para uma das 16 cores disponiveis.
     void setForeground(int color);
     // Alterar a cor de fundo dos caracteres, para uma das 16 cores disponiveis.
@@ -39,7 +39,7 @@ public:
     void puts(const char * str);
     // Limpar a window
     void windowClear();
-    // Repor a placa de video no estado em que se encontrava, com o cursor visivel.
+    // Retorna um ponteiro para my_win
     WINDOW * getWindow(){
         return my_win;
     }
