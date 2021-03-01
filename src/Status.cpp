@@ -1,6 +1,6 @@
 #include "Status.h"
 
-Status * Status::instance = new Status;
+Status * Status::instance = NULL;
 
 void Status::puts(int x, const char * s){
     // Posiciona o cursor

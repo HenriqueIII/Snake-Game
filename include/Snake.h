@@ -10,12 +10,12 @@ class Snake{
         Point pos;
     public:
         // Ocultar a vertebra e desmarcar a posição na arena.
-        void hide();
+        inline void hide();
         // Mostra a vertebra no ponto pos figurada com '#'.
-        void show();
+        inline void show();
         // Mostra a vertebra no ponto p figurada com '#' e
         // marca a posição no array bidimensional.
-        void show(Point p);
+        inline void show(Point p);
     }; // Fim da classe Vertebra
 
     // Declaração nested privada de uma lista duplamente
@@ -69,24 +69,24 @@ class Snake{
 
     /*  Mata o rato e incementa toGrow função da energia
         devolvida pelo rato e incrementa a pontuação        */
-    inline void eat();
+    void eat();
     /*  Situa a cabeça de Snake num ponto aleatório livre
         da arena e marca na arena esse ponto como ocupado   */
-    inline void setHead();
+    void setHead();
     /*  Oculta do ecrã a cabeça da cobra, liberta o ponto
         do ecrã que ela ocupava e situa-a no novo ponto     */
-    inline void changeHead(const Point & newHead);
+    void changeHead(const Point & newHead);
     /*  Afecta dir com a nova direcção caso não seja oposta */
-    inline void changeDirection(DirValue d);
-    inline void hideHead() const;
-    inline void showHead() const;
-    inline void kill();
-    inline void advance(Point delta);
+    void changeDirection(DirValue d);
+    void hideHead() const;
+    void showHead() const;
+    void kill();
+    void advance(Point delta);
 public:
-    inline Snake();
-    inline ~Snake();
-    inline bool isDead() const;
-    inline void show();
+    Snake();
+    ~Snake();
+    bool isDead() const;
+    void show();
     void move();
 };
 #endif

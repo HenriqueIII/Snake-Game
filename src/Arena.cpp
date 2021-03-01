@@ -1,6 +1,6 @@
 #include "Arena.h"
 
-Arena * Arena::instance = new Arena;
+Arena * Arena::instance = NULL;
 
 void Arena::makeBorder(){
     obst[0] = new Obstacle(Point(0,0),Obstacle::VERTICAL,dsp.MAX_Y);
