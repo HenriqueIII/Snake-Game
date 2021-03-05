@@ -18,7 +18,7 @@ public:
         // Cores claras
         BBLACK=8,BRED,BGREEN,BYELLOW,BBLUE,BMAGENTA,BCYAN,BWHITE
     };
-    enum {MIN_X=0,MIN_Y=0,MAX_X=79,MAX_Y=23};
+    enum {MIN_X=0,MIN_Y=0,MAX_X=48,MAX_Y=23};
     // Programar a carta de video em modo texto 80x24, 8 cores e ocultar o cursor.
     Display();
     // Alterar a cor dos caracteres a escrever, para uma das 16 cores disponiveis.

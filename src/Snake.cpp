@@ -123,6 +123,10 @@ void Snake::move(){
         case KEY_RIGHT:
             changeDirection(RIGHT);
             break;
+        case KEY_IC:
+            GAME->getMouse()->hide();
+            eat();
+            return;
     }
 
     if(dir==NONE)

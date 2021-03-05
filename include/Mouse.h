@@ -8,7 +8,7 @@ class Mouse{
     Point pos;
     // Número de vidas
     unsigned lives;
-    enum {MOUSE_ENERGY=10, MOUSE_LIVES=5};
+    enum {MOUSE_ENERGY=10, MOUSE_LIVES=20};
     // Define uma nova posição e notifica a arena.
     void newPosition();
 public:
